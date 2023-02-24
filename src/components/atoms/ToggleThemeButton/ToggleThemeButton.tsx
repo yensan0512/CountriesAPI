@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import { ReactComponent as MoonIcon } from 'lib/icons/moon.svg';
-import { FC } from 'react';
-
 
 type ToggleThemeButtonProps = {
     handleToggleTheme: () => void;
@@ -22,7 +20,7 @@ const Button = styled.button`
 	}
 `
 
-const ToggleThemeButton: FC<ToggleThemeButtonProps> = ({ handleToggleTheme }) => {
+const ToggleThemeButton = ({ handleToggleTheme }: ToggleThemeButtonProps) => {
     return (
         <Button onClick={handleToggleTheme}>
             <MoonIcon />

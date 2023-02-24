@@ -34,7 +34,7 @@ type HeaderProps = {
     handleToggleTheme: () => void;
 };
 
-const Header: FC<HeaderProps> = ({ handleToggleTheme }) => (
+const Header = ({ handleToggleTheme }: HeaderProps) => (
     <Wrapper>
         <StyledContainer>
             <StyledTitle>Where in the world ?</StyledTitle>
